@@ -1,0 +1,56 @@
+💼 JavaScript Interview Questions (Functions & Methods)
+❓ 1. What is the difference between a function and a method?
+A function is a standalone block of code, while a method is a function associated with an object.
+
+❓ 2. What is a pure function?
+A function that:
+
+Always returns the same output for the same input.
+
+Has no side effects (does not modify global state).
+
+❓ 3. What is the difference between function declaration and function expression?
+Declaration:
+
+js
+Copy
+Edit
+function greet() {}
+Expression:
+
+js
+Copy
+Edit
+const greet = function () {};
+Expression functions are not hoisted.
+
+❓ 4. What is an arrow function? When not to use it?
+Arrow functions use => syntax and do not have their own this.
+Don't use them:
+
+As object methods (you’ll lose this)
+
+When you need access to arguments object
+
+❓ 5. What is hoisting in context of functions?
+Function declarations are hoisted — they can be called before they are defined in the code.
+
+🧠 Bonus Concept: First-Class Functions in JS
+JavaScript treats functions as first-class citizens, meaning:
+
+Functions can be stored in variables
+
+Passed as arguments
+
+Returned from other functions
+
+js
+Copy
+Edit
+function greet() {
+  return "Hello!";
+}
+function callFunc(fn) {
+  console.log(fn());
+}
+callFunc(greet); // Output: Hello!

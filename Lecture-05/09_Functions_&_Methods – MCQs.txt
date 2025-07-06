@@ -1,0 +1,127 @@
+✅ Functions & Methods – MCQs
+1. What is the correct way to define a function in JavaScript?
+A) function = myFunc() {}
+B) function myFunc() {}
+C) def myFunc() {}
+D) define myFunc() {}
+✅ Answer: B
+
+2. What will this function return?
+
+js
+Copy
+Edit
+function test() {
+  return;
+}
+console.log(test());
+A) null
+B) 0
+C) undefined
+D) error
+✅ Answer: C
+
+3. What are parameters in a function?
+A) Values returned from a function
+B) Keywords that define functions
+C) Variables listed in function definition
+D) Loops in a function
+✅ Answer: C
+
+4. What will this code output?
+
+js
+Copy
+Edit
+const sum = (a, b) => a + b;
+console.log(sum(2, 3));
+A) 23
+B) 5
+C) undefined
+D) NaN
+✅ Answer: B
+
+5. What does a function return if there is no return statement?
+A) null
+B) undefined
+C) false
+D) 0
+✅ Answer: B
+
+6. Which of the following is a function expression?
+A) function hello() {}
+B) const hello = function() {}
+C) hello() => {}
+D) var = function hello() {}
+✅ Answer: B
+
+7. What keyword is used to exit a function and send back a value?
+A) exit
+B) send
+C) break
+D) return
+✅ Answer: D
+
+8. What is the output?
+
+js
+Copy
+Edit
+function sayHi(name) {
+  console.log("Hi " + name);
+}
+sayHi(); 
+A) Hi undefined
+B) Hi null
+C) Error
+D) Hi
+✅ Answer: A
+
+9. Which is not true about arrow functions?
+A) They are shorter
+B) They have their own this
+C) They can return values
+D) They are anonymous
+✅ Answer: B
+
+10. In JavaScript, methods are...
+A) Functions outside objects
+B) Loops
+C) Functions within objects
+D) Events
+✅ Answer: C
+
+11. What does this refer to inside an object method?
+A) The global object
+B) The window object
+C) The object itself
+D) The function
+✅ Answer: C
+
+12. Which function type is hoisted in JS?
+A) Arrow function
+B) Function expression
+C) Function declaration
+D) All of them
+✅ Answer: C
+
+13. Which of the following can be used as a method?
+A) Only arrow functions
+B) Only function expressions
+C) Any function inside an object
+D) Only async functions
+✅ Answer: C
+
+14. Can a function return another function in JavaScript?
+A) No
+B) Only with special syntax
+C) Yes
+D) Only in ES6
+✅ Answer: C
+
+15. What is a pure function?
+A) A function that uses only built-in methods
+B) A function with no parameters
+C) A function that has no side effects and returns same output for same input
+D) A function inside another function
+✅ Answer: C
