@@ -1,0 +1,153 @@
+🧠 JavaScript Interview Cheat Sheet (For Freshers + Interns)
+🔹 1. Variables: var, let, const
+Feature	var	let	const
+Scope	Function-scoped	Block-scoped	Block-scoped
+Redeclaration	✅ Allowed	❌ Not allowed	❌ Not allowed
+Reassignment	✅ Allowed	✅ Allowed	❌ Not allowed
+Hoisted	✅ Yes (undefined)	✅ Yes (but TDZ*)	✅ Yes (but TDZ*)
+
+*TDZ: Temporal Dead Zone (accessing before declaration causes error)
+
+🔹 2. Comparison Operators: == vs ===
+Operator	Meaning	Checks	Example
+==	Loose Equality	Value only (type converts)	5 == "5" → true
+===	Strict Equality	Value + Type (no conversion)	5 === "5" → false
+
+🔹 3. Data Types
+Primitive: Number, String, Boolean, Null, Undefined, Symbol, BigInt
+
+Non-Primitive: Object (Array, Function, Object)
+
+🔹 4. Hoisting
+Variables and functions are moved to the top of their scope.
+
+var is hoisted with undefined
+
+let and const are hoisted but not initialized → ReferenceError if accessed before declaration.
+
+🔹 5. Loops
+for, while, do...while → basic control structures
+
+for...of → for arrays, strings
+
+for...in → for objects
+
+🔹 6. Functions
+js
+Copy
+Edit
+function greet(name) {
+  return "Hello " + name;
+}
+Arrow function:
+
+js
+Copy
+Edit
+const greet = (name) => "Hello " + name;
+Functions can be stored in variables, passed as arguments (first-class citizens)
+
+🔹 7. String Methods
+.length, .toUpperCase(), .toLowerCase()
+
+.slice(start, end), .replace(), .trim()
+
+.includes(), .indexOf(), .split()
+
+🔹 8. Arrays
+js
+Copy
+Edit
+let fruits = ["apple", "banana"];
+Common Methods:
+.push(), .pop(), .shift(), .unshift()
+.map(), .filter(), .reduce()
+
+🔹 9. Objects
+js
+Copy
+Edit
+let user = {
+  name: "Himanshu",
+  age: 21
+};
+Access: user.name or user["age"]
+
+Loop: for...in
+
+🔹 10. Asynchronous JavaScript
+JS is single-threaded but handles async using:
+
+setTimeout, setInterval
+
+Promises
+
+async/await
+
+Event Loop
+
+js
+Copy
+Edit
+async function fetchData() {
+  const data = await fetch("url");
+}
+🔹 11. DOM Manipulation
+js
+Copy
+Edit
+document.getElementById("demo").innerText = "Hello JS!";
+Selecting elements:
+
+getElementById, querySelector, querySelectorAll
+
+Modifying content, style, attributes
+
+🔹 12. Events
+js
+Copy
+Edit
+element.addEventListener("click", () => {
+  alert("Clicked!");
+});
+Events: click, submit, keydown, mouseover, etc.
+
+🔹 13. ES6+ Features
+let, const, Arrow Functions
+
+Template literals: `Hello ${name}`
+
+Destructuring:
+
+js
+Copy
+Edit
+let [a, b] = [1, 2];
+let {x, y} = {x: 10, y: 20};
+Spread/rest ...
+
+Default parameters
+
+🔹 14. Null vs Undefined
+null: intentionally empty value
+
+undefined: variable declared but no value assigned
+
+🔹 15. Truthy & Falsy Values
+Falsy: false, 0, "", null, undefined, NaN
+All other values are truthy
+
+🧪 Bonus: Mini Practice Questions
+js
+Copy
+Edit
+// Q1
+console.log(typeof null);     // "object"
+
+// Q2
+console.log(0 == false);      // true
+console.log(0 === false);     // false
+
+// Q3
+let x;
+console.log(x);               // undefined
