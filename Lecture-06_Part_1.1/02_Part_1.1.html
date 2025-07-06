@@ -1,0 +1,125 @@
+<!-- ✅ Video 6:
+Lecture 6 : DOM - Document Object Model | JavaScript Full Course | Part 1 -->
+
+<!-- ---------Part 1.1------- -->
+
+<!DOCTYPE html>
+<!-- <html lang="en">
+<html>: Ye batata hai ki ye HTML document hai.
+lang="en": Iska matlab hai page ki language English (en) hai. -->
+<html lang="en">
+<!-- <head> tag in HTML:
+<head> ek HTML document ka section hota hai jo browser ko page ke baare me metadata deta hai — yaani wo information jo user ko directly visible nahi hoti, lekin page ka structure, style, aur behavior define karti hai. -->
+<head>
+    <!-- <meta> tag HTML ke <head> section me use hota hai page ke baare me extra information (metadata) dene ke liye. Yeh information browser, search engines (jaise Google), aur social media platforms ke liye hoti hai — user ke liye directly visible nahi hoti. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title> tag : Browser tab me page ka title dikhata hai -->
+    <title>JS with ApnaCollege</title>
+    <!-- Ye line HTML file me likhi jaati hai:
+    <link rel="stylesheet" href="style.css" />
+    Iska matlab aur kaam:
+    • <link>: Ye HTML tag external resources (jaise CSS file) ko HTML document se jodne ke liye use hota hai.
+
+    • rel="stylesheet": Yeh batata hai ki jo file hum jod rahe hain wo ek CSS stylesheet hai.
+
+    • href="style.css": Yeh us CSS file ka path hai jise HTML me link kiya ja raha hai. Yahaan "style.css" naam ki CSS file ko joda gaya hai. -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Heading</h1>
+    <h2>DOM Demo by Apna College</h2>
+    <h4>Topic1 : Starter Code</h4>
+    <p>Let's learn about DOM concepts in detail.</p>
+    <button>Clicked me!</button>
+    <!-- 🔍 <script> Tag in HTML
+    ✅ Kya karta hai <script> tag?
+    <script> tag ka use HTML me JavaScript code likhne ya attach karne ke liye hota hai. JavaScript ke through hum HTML page me:
+
+    • Interactivity laate hain (jaise buttons ka click, forms ka validation)
+    • Data process karte hain
+    • Elements ko dynamically change karte hain -->
+    
+    <!-- ✅ script tag ko HTML me kaha likhte hain?
+    </body> tag ke just pehle
+
+        <body>
+            // All HTML content 
+
+        <script src="script.js"></script>
+        </body>
+
+    👍 Kyun best hai:
+        • Tab tak saara HTML (DOM) load ho chuka hota hai
+        • JavaScript easily elements ko access kar sakta hai
+        • Page fast load hota hai -->
+    
+    <!-- ✅ Ye line kya karti hai: <script> alert("hello"); </script>
+    Jaise hi browser is line ko read karega, ek popup alert box open hoga jisme likha hoga:
+    🔍 Output: hello
+
+    📦 Explanation:
+    • <script> tag ke andar likha gaya code JavaScript hota hai.
+    • alert("hello") ek built-in JavaScript function hai jo ek message show karta hai popup box me.
+    • Iska use basic notification ya testing/debugging ke liye kiya jaata hai.
+
+    ⚠️ Important Note:
+    • Jab tak user OK nahi karta popup box pe, tab tak page ka load ruk jaata hai. -->
+    <script>
+        alert("hello");
+    </script>
+</body>
+</html>
+
+
+<!-- <head> tag me kya-kya hota hai?
+Yeh kuch common cheezein hain jo <head> ke andar likhi jaati hain:
+
+Tag	        Kaam
+<title>	    Browser tab me page ka title dikhata hai
+<link>	    External files (CSS, fonts, icons) ko connect karta hai
+<meta>	    Metadata deta hai (character set, description, viewport etc.)
+<style>	    Internal CSS likhne ke liye use hota hai
+<script>	JavaScript code ya file ko link karne ke liye
+<base>	    Base URL set karta hai document ke liye -->
+
+
+<!-- ✅ meta Tag in HTML:
+<meta> tag HTML ke <head> section me use hota hai page ke baare me extra information (metadata) dene ke liye. Yeh information browser, search engines (jaise Google), aur social media platforms ke liye hoti hai — user ke liye directly visible nahi hoti.
+
+🔹 Common Use Cases of <meta> Tag:
+Purpose	                Code	                        Explanation
+✅ Character set	      <meta charset="UTF-8">	       Page me kaunse characters allow 
+                                                        hain (UTF-8 supports all characters 
+                                                        including Hindi, emojis etc.)
+
+📱 Responsive design	<meta name="viewport"           Mobile friendly layout banane ke
+                        content="width=device-width,    liye
+                        initial-scale=1.0">	
+
+🧠 Description	        <meta name="description"        SEO ke liye — search results me 
+                        content="This is a personal     dikhne wala text
+                        portfolio website.">	
+    🔍 SEO kya hota hai?
+    SEO ka full form hota hai: Search Engine Optimization
+    Yeh ek technique hai jisse hum apni website ya web page ko search engines (jaise Google, Bing) me higher rank par dikhane ke liye optimize karte hain.
+
+👤 Author	            <meta name="author"             Page kisne banaya hai 
+                        content="Himanshu Singh"> -->
+
+
+<!-- 🔸 Bonus: defer and async attributes
+▶ defer:
+Script ko tab tak delay karta hai jab tak poora HTML load na ho jaye.
+
+html
+<head>
+  <script src="script.js" defer></script>
+</head>
+⚡ async:
+Script ko jaldi se load karta hai par HTML ke sath-sath. Order matter nahi karta.
+
+html
+<head>
+  <script src="script.js" async></script>
+</head> -->
