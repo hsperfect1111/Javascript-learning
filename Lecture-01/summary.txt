@@ -1,0 +1,26 @@
+📒 Short Notes: Variables & Data Types
+
+🔹 What is JavaScript?
+A high-level, interpreted language used for making web pages interactive. Runs in the browser & with Node.js on servers.
+
+🔹 Variable Keywords:
+- var: Function scoped, re-declarable, re-assignable
+- let: Block scoped, re-assignable
+- const: Block scoped, cannot reassign
+
+🔹 Rules:
+- Can't start variable name with a number
+- Use camelCase (e.g., userName)
+- JavaScript is case-sensitive
+
+🔹 Data Types:
+- Primitive: Number, String, Boolean, Undefined, Null, BigInt, Symbol
+- Non-Primitive: Object (Arrays, Functions)
+
+🔹 Q&A:
+Q1. Difference between var, let, const?
+A1. var is function-scoped, redeclarable. let is block-scoped. const is block-scoped and can't be reassigned.
+
+Q2. typeof null → "object" (known bug)
+
+Q3. Use const when value shouldn't change.
