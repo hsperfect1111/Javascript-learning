@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+/* Element ki class ko access krte h dot (.) se */
+.container{
+    height : 70vh;  /*vh : viewport height*/
+    display: flex;  /*saare box ek line k andar aa jayege*/
+    justify-content: center;    /* center m lane k liye  */
+    align-items: center;    /* center m lane k liye  */
+}
+
+
+.game{
+    /* yaha pr apni dimension ka 60% de rahe h */
+    height: 60vmin;     /*1% of the viewport's smaller dimension.*/
+    width: 60vmin;
+    display: flex;  /*saare box ek line k andar aa jayege*/
+    flex-wrap: wrap;    /*boxes next line k andar aa jayege*/
+    justify-content: center;    /* center m lane k liye  */
+    align-items: center;    /* center m lane k liye  */
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;    /* box round ho jayege corner se  */
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);   /*opacity = 0.1 light dene k liye*/
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    /* Ab jb bhi hume ise dikhana  hoga tb hum ise dikha payege  */
+    display: none;  
+}
