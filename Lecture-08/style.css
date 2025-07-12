@@ -1,0 +1,19 @@
+/* part4 */
+/* div{
+    height : 100px;
+    weight : 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+} */
+
+/* // part12: we can do the same thing with classes in style.css  */
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
