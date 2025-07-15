@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;   /* Yeh h1 element ki height fix kar dega — sirf 48px tall dikhega. */
+    line-height: 5rem;
+}
+
+.choice{
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover{
+  /* opacity: 0.5;   image blur ho jayegi  */
+  cursor: pointer; /* ise image pr jate hi humara cursor change ho jayega */
+  background-color: #081b31;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;  /* image ko ek line m lane k liye  */
+  justify-content: center;  /* image horizontal align krne k liye  */
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;  /* upar se image thoda niche aa jayegi */
+
+}
+
+.score-board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score{
+  font-size: 4rem;
+}
+
+.msg-container{
+  text-align: center; /*ise msg "Play your move" center m aa jayega */
+  margin-top: 5rem;
+}
+
+#msg{
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* Notes */
+
+/* 
+height: 3rem; dene se kya hoga ??
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 3rem;
+} 
+
+✅ height: 3rem; ka matlab:
+rem stands for "root em" — i.e., relative to the root element's font size (usually 1rem = 16px by default in most browsers).
+So 3rem = 3 × 16px = 48px.
+
+🔍 “Relative to the root element's font size” ka matlab:
+CSS units like rem depend on the font size of the root element, which is usually the <html> tag.
+
+✅ Why use rem?
+Makes layout scalable.
+
+Improves accessibility — if the user increases base font size, your design adjusts.
+
+More consistent than em, which is relative to the parent (not root).
+
+📌 Effect:
+Yeh h1 element ki height fix kar dega — sirf 48px tall dikhega.
+
+Agar text bada hoga ya font size zyada hoga, to text cut off ho sakta hai (overflow), jab tak aap overflow, line-height, ya padding na do.
+
+💡 Tip:
+Agar aap chahte ho ki text comfortable dikhe, toh height dene ke bajaye:
+
+css
+padding: 1rem 0;
+use karo — jo vertically spacing dega bina cut kiye.
+
+example with overflow vs padding?
+
+✅ With height: 3rem; (❌ Risk of text cut-off):
+html
+<h1 style="background-color: #081b31; color: #fff; height: 3rem;">
+  This is a heading
+</h1>
+🔍 If the text inside takes more space than 3rem (like due to large font size or uppercase text), part of it may get hidden.
+
+✅ With padding: 1rem 0; (✔️ Safer & responsive):
+html
+Copy
+Edit
+<h1 style="background-color: #081b31; color: #fff; padding: 1rem 0;">
+  This is a heading
+</h1>
+🔍 Now the height adjusts based on content, with vertical space added by padding — no cutoff issue.
+
+💡 Conclusion:
+=> 1. Use height only when you need a fixed box (like for buttons, layouts).
+
+=> 2. For headings/text: prefer padding for better responsiveness and readability.
+
+/* full example in an HTML and CSS file */
+/* Go to the next Lecture-10 _fixed-height_vs_padding folder */
+
+/* ✅ margin-bottom: 2rem;
+🔍 Kya karega?
+Element ke neeche 2rem (≈32px) ka extra space dega.
+
+Ye external spacing hota hai — dusre elements se doori banane ke liye.
+
+📌 Use when you want spacing between blocks — like headings, cards, sections. */
+

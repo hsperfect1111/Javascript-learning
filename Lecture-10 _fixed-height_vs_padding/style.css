@@ -1,0 +1,34 @@
+/* Common styles */
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* ❌ Fixed height — might cut off text */
+/* What You’ll See:
+The first heading might appear a bit tight vertically (or get clipped on large font sizes). */
+.fixed-height {
+    background-color: #081b31;
+    color: white;
+    height: 3rem;
+}
+
+/* ✔️ Padding — keeps content safe */
+/* What You’ll See: */
+/* The second heading will have nice vertical spacing and never cuts off. */
+.with-padding {
+    background-color: #081b31;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Optional: Add border to visualize height */
+.fixed-height, .with-padding {
+    border: 2px solid #fff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <!-- 
+        Each choice (rock, paper, scissors) is given a unique ID 
+        so we can identify which one was clicked using JavaScript 
+        and track user selection easily.
+        -->
+        <!-- id kyu di ?? : choice ko uniquely identify krna chahte h , track rakhne k liye ki humne rock pr click kiya h yaa paper, scissors pr  -->
+        
+        <!-- Rock choice -->
+        <div class="choice" id="rock">
+            <img src="./images/rock.png">
+        </div>
+
+        <!-- Paper choice -->
+        <div class="choice" id="paper">
+            <img src="./images/paper.png">
+        </div>
+
+        <!-- Scissors choice -->
+        <div class="choice" id="scissors">
+            <img src="./images/scissors.png">
+        </div>
+    </div>
+
+    <!-- Scoreboard container -->
+    <div class="score-board">
+
+        <!-- User's score section -->
+        <div class="score">
+            <p id="user-score">0</p>    <!-- Displays user's score -->
+            <p>You</p>  <!-- Label for user -->
+        </div>
+
+        <!-- Computer's score section -->
+        <div class="score">
+            <p id="comp-score">0</p>    <!-- Displays computer's score -->
+            <p>Comp</p>     <!-- Label for computer -->
+        </div>
+    </div>
+
+    <!-- msg-conatiner jo hume batayega ki hum jeet rahe h yaa game draw ho raha h , yaa jo current turn chal rahi h usme kya result aaya h  -->
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
