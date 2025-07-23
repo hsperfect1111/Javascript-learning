@@ -1016,11 +1016,11 @@
 
 // ==== IIFE : Immediately Invoked Function Expression ====
 
-
 // NOTE : async-await ko function k andar dalna pdta h aur fir us function ko call krna pdta h 
 // is call se bachne ka tarika hota h IIFE : Immediately Invoked Function Expression
 
 // Agar hume code immediately execute krana h aur ek hi baar usko use krna chahte h 
+// isme hume function call krne ki zarurat nhi padegi
 
 function getData(dataId) {
     return new Promise((resolve, reject) => {
@@ -1045,15 +1045,32 @@ function getData(dataId) {
     await getData(5);
 })();
 
+// output:
+// getting data1...
+// data 1
+// getting data2...
+// data 2
+// getting data3...
+// data 3
+// getting data4...
+// data 4
+// getting data5...
+// data 5
+
+// mdn IIFE :
+// https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 
 
+// It contains two major parts:
 
+// 1. A function expression. This usually needs to be enclosed in parentheses in order to be parsed correctly.
+// 2. Immediately calling the function expression. Arguments may be provided, though IIFEs without arguments are more common.
 
+// Use cases of IIFEs include:
 
-
-
-
-
+// Avoiding polluting the global namespace by creating a new scope.
+// Creating a new async context to use await in a non-async context.
+// Computing values with complex logic, such as using multiple statements as a single expression.
 
 
 
